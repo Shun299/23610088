@@ -60,7 +60,6 @@ function addElement() {
     // 失敗条件１：もし「ん」で終わったら、即終了
     if (text_word.slice(-1) === "ん") {
         alert('「ん」がついたからまけだよ');
-        reset();
         return;
     };
 
