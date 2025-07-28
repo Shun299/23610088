@@ -60,13 +60,13 @@ function addElement() {
     // 失敗条件１：もし「ん」で終わったら、即終了
     if (text_word.slice(-1) === "ん") {
         alert('「ん」がついたからまけだよ');
+        reset();
         return;
     };
 
     // 失敗条件２：もし直前の単語の末尾と入力した単語の先頭が一緒じゃないなら、警告
     if (previous.slice(-1) !== text_word.slice(0,1)) {
         alert('前の言葉のおわりと、次の言葉のはじまりがちがってるよ');
-        reset();
         return;
     };
 
